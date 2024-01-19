@@ -1,0 +1,139 @@
+/* Reset some default styles */
+
+h1,
+h2,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Apply a basic style */
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    font-family: serif, Georgia;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1000px;
+    background: hsla(246, 60%, 20%, 1);
+    background: linear-gradient(0deg, hsla(246, 60%, 20%, 1) 0%, hsla(227, 41%, 38%, 1) 49%, hsla(246, 60%, 20%, 1) 100%);
+    background: -moz-linear-gradient(0deg, hsla(246, 60%, 20%, 1) 0%, hsla(227, 41%, 38%, 1) 49%, hsla(246, 60%, 20%, 1) 100%);
+    background: -webkit-linear-gradient(0deg, hsla(246, 60%, 20%, 1) 0%, hsla(227, 41%, 38%, 1) 49%, hsla(246, 60%, 20%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1A1451", endColorstr="#394A89", GradientType=1);
+    /*
+    background-image: url('background_1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    */
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 10pt;
+    text-align: center;
+    border-radius: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.contact {
+    background: #333;
+    color: #eaeaea;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.bento-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Creates a responsive number of columns */
+    gap: 10px;
+    /* Space between items */
+    align-items: start;
+    /* Aligns items to the start of the grid area */
+    padding: 20px;
+}
+
+
+/* Assuming .box-item is your default grid item */
+
+.box-item {
+    background-color: rgb(93, 93, 93);
+    color: #eaeaea;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background: hsla(227, 41%, 38%, 1);
+    background: linear-gradient(90deg, hsla(227, 41%, 38%, 1) 0%, hsla(227, 44%, 52%, 1) 49%, hsla(227, 41%, 38%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(227, 41%, 38%, 1) 0%, hsla(227, 44%, 52%, 1) 49%, hsla(227, 41%, 38%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(227, 41%, 38%, 1) 0%, hsla(227, 44%, 52%, 1) 49%, hsla(227, 41%, 38%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#394A89", endColorstr="#4F67BB", GradientType=1);
+}
+
+.box-item img {
+    width: 100%;
+    /* Makes the image responsive, adjusting to the parent's width */
+    height: auto;
+    /* Keeps the image's aspect ratio */
+    display: block;
+}
+
+
+/* Specific classes for spanning multiple columns or rows */
+
+.box-item--double {
+    grid-column: span 2;
+    grid-row: span 2;
+    border-radius: 10px;
+    /* Spans two columns */
+}
+
+.box-item--tall {
+    grid-row: span 2;
+    border-radius: 10px;
+    /* Spans two rows */
+}
+
+.box-item--long {
+    grid-column: span 2;
+    border-radius: 10px;
+    /* Spans two rows */
+}
+
+
+/* Responsive adjustments with media queries */
