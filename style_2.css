@@ -113,6 +113,10 @@ footer {
     display: block;
 }
 
+.box-item a {
+    color: #494949;
+}
+
 
 /* Specific classes for spanning multiple columns or rows */
 
