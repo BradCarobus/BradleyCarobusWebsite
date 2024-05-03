@@ -105,38 +105,90 @@ footer {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#394A89", endColorstr="#4F67BB", GradientType=1);
 }
 
-.box-item img {
-    width: 100%;
-    /* Makes the image responsive, adjusting to the parent's width */
-    height: auto;
-    /* Keeps the image's aspect ratio */
-    display: block;
+@media screen and (max-width: 2000px) {
+    
+    .box-item img {
+        width: 100%;
+        /* Makes the image responsive, adjusting to the parent's width */
+        height: auto;
+        /* Keeps the image's aspect ratio */
+        display: block;
+    }
+
+    .box-item a {
+        color: #494949;
+    }
+
+    .box-item--single{
+        grid-column: span 1;
+        grid-row: span 1;
+        border-radius: 10px;
+        /* Spans two columns */
+    }
+
+    /* Specific classes for spanning multiple columns or rows */
+
+    .box-item--double {
+        grid-column: span 2;
+        grid-row: span 2;
+        border-radius: 10px;
+        /* Spans two columns */
+    }
+
+    .box-item--tall {
+        grid-row: span 2;
+        border-radius: 10px;
+        /* Spans two rows */
+    }
+
+    .box-item--long {
+        grid-column: span 2;
+        border-radius: 10px;
+        /* Spans two rows */
+    }
 }
 
-.box-item a {
-    color: #494949;
-}
+@media screen and (max-width: 920px) {
+    
+    .box-item img {
+        width: 100%;
+        /* Makes the image responsive, adjusting to the parent's width */
+        height: auto;
+        /* Keeps the image's aspect ratio */
+        display: block;
+    }
 
+    .box-item a {
+        color: #494949;
+    }
 
-/* Specific classes for spanning multiple columns or rows */
+    .box-item--single{
+        grid-column: span 2;
+        grid-row: span 1;
+        border-radius: 10px;
+        /* Spans two columns */
+    }
 
-.box-item--double {
-    grid-column: span 2;
-    grid-row: span 2;
-    border-radius: 10px;
-    /* Spans two columns */
-}
+    /* Specific classes for spanning multiple columns or rows */
 
-.box-item--tall {
-    grid-row: span 2;
-    border-radius: 10px;
-    /* Spans two rows */
-}
+    .box-item--double {
+        grid-column: span 2;
+        grid-row: span 2;
+        border-radius: 10px;
+        /* Spans two columns */
+    }
 
-.box-item--long {
-    grid-column: span 2;
-    border-radius: 10px;
-    /* Spans two rows */
+    .box-item--tall {
+        grid-row: span 2;
+        border-radius: 10px;
+        /* Spans two rows */
+    }
+
+    .box-item--long {
+        grid-column: span 2;
+        border-radius: 10px;
+        /* Spans two rows */
+    }
 }
 
 
