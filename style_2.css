@@ -50,6 +50,7 @@ header img{
 nav ul {
     list-style: none;
     background-color: #333;
+    padding-top: 5px;
 }
 
 nav ul li {
@@ -60,6 +61,13 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #fff;
+    background-color: #797979;
+    border-radius: 15%;
+    padding: 5px 5px;
+    box-shadow: 5px 5px 5px #000000;
+    background: rgb(128,128,128);
+    background: linear-gradient(352deg, rgba(128,128,128,1) 0%, rgba(88,88,88,1) 5%, rgba(73,73,73,1) 63%, rgba(66,66,66,1) 100%);
+    
 }
 
 nav ul li a:hover {
