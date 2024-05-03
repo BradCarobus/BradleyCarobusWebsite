@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GE: Industry Sponsored Project</title>
+    <link rel="stylesheet" href="style_2.css">
+    <!-- Link to your CSS file -->
+</head>
+
+<header>
+    <h1>GE Vernova Industry Sponsored Project</h1>
+    <img src="logo_GE.png" alt="Profesional headshot">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+
+    <div class="bento-box">
+
+        <div class="box-item box-item--double">
+            <h2>Abstract</h2>
+            <p>
+                We used a conveyor belt, a servo motor, two IR sensors, and a couple of microcontroller boards to simulate a control process. A couple of important variables to keep track of are the voltage supplied to the servo motor, which controls the speed of the conveyor belt, and the time between each interruption of the IR sensors to calculate the actual belt speed. Lastly, determine what information based on specific parameters to send to the blockchain network. The blockchain network will determine whether that information is a threat to the process as a whole or whether it is neutral. Based on the level of the threat the blockchain will create a block and send it to every node to be stored.
+
+            </p>
+
+            <h2>Executive Summary</h2>
+            <p>
+                For this project, we were tasked with developing a blockchain network to determine if it is possible to identify and store threats to a process on-chain, thereby ensuring non-repudiation. We accomplished this by interfacing the blockchain network with GE’s Mark VIe controller, testing various concepts such as consensus algorithms, encryption algorithms, public and private keys, TCP communication, and Simplicity to ensure they all work together effectively. 
+
+            </p>
+
+            <h2>Introduction</h2>
+            <p>
+                The main problem intended to be solved through this lab is to make sure that if a threat is posed to a control system, the threat can be captured in a blockchain network. Non-repudiation must be ensured so that we can know when the threat occurred, who might have caused it, and that our data has not been tampered with. The motivation of this project was Stuxnet, a cyber physical threat that tempered with a control system that caused damage to the process while covering up that anything was wrong to the operators of the system. A threat in our case is defined as outside manipulations that could alter the RPM speed of a conveyor belt without the operator seeing a change on an HMI display. All threats consist of the change in readings in the control system not being recorded onto the block chain.
+                Knowledge in control systems was integral for this project as it revolved entirely around a control system. Experience with microcontrollers and LAN networks were also required for setting up the blockchain network.
+                
+            </p>
+
+            <h2>Problem Definition</h2>
+            <p>
+                Digital Ghost refers to a change to a process that either isn't picked up by the controller or can't be seen by the operator. This is very important because if there are changes to a process that the operator does not know about, it could possibly damage the process, or even worse, get someone hurt. In our project we tried to tackle this idea and explore the different ways of how a digital ghost finds its way into a process and even tried to explore how to detect these types of changes and possibly store that information in a way that can't be changed by any software or human operator.
+                Our project must be transportable for the sake of the presentation. It must also be able to continuously run over long periods of time.
+                
+            </p>
+
+
+        </div>
+
+    </div>
+
+    
+</body>
+
+
+
+<div class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>
+        Email: bdcarbus@gmail.com
+    </p>
+    <p>
+        Phone: 630-957-8764
+    </p>
+    <h2>
+        <a href="https://www.linkedin.com/in/brad-carobus-843b1621b/">LinkedIn</a>
+    </h2>
+
+    <p>Copyright © Bradley Carobus. All Rights Reserved.</p>
+    
+</div>
+
+</html>
