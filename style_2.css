@@ -188,7 +188,8 @@ footer {
     }
 
     .box-item a {
-        color: #494949;
+        color: #d4e817;
+        text-decoration: none;
     }
 
     .box-item--single{
